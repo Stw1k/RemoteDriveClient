@@ -317,8 +317,7 @@ namespace RemoteDriveClient.Forms
             {
                 string content = sr.ReadToEnd();
 
-                // Обмеження довжини тексту для великих Kotlin файлів
-                if (content.Length > 50000) // 50KB обмеження для Kotlin файлів
+                if (content.Length > 50000) 
                 {
                     content = content.Substring(0, 50000) + "\n\n...[ФАЙЛ ЗНАЧНО ВЕЛИКИЙ, ВІДОБРАЖЕНО ЛИШЕ ПЕРШІ 50KB]...";
                 }
