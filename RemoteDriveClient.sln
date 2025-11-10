@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteDriveClient", "RemoteDriveClient.csproj", "{03358E48-A1BE-400D-A9FD-D7717CEBE51C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteDriveClient.Tests", "RemoteDriveClient.Tests\RemoteDriveClient.Tests.csproj", "{047B0ABB-E60C-0F65-2889-76C13F7B75D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03358E48-A1BE-400D-A9FD-D7717CEBE51C} = {03358E48-A1BE-400D-A9FD-D7717CEBE51C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RemoteDriveClient\RemoteDriveClient.csproj" />
+    <ProjectReference Include="..\RemoteDriveClient.csproj" />
   </ItemGroup>
 
   <ItemGroup>
