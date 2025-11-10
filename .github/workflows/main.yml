@@ -28,12 +28,10 @@ jobs:
 
     
     - name: Restore dependencies
-      run: dotnet restore RemoteDriveClient.sln
+      run: dotnet restore RemoteDriveClient.sln -p:Platform=x86
 
-    
     - name: Build
-      run: dotnet build RemoteDriveClient.sln --no-restore
+      run: dotnet build RemoteDriveClient.sln --no-restore -p:Platform=x86
 
-    
     - name: Test
-      run: dotnet test RemoteDriveClient.sln --no-build --verbosity normal
+      run: dotnet test RemoteDriveClient.sln --no-build --verbosity normal -p:Platform=x86
