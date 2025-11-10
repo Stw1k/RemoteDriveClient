@@ -27,10 +27,11 @@ jobs:
         dotnet-version: '8.0.x' 
 
     
-    # Крок "Restore" повністю видалено
+    - name: Restore packages (MSBuild)
+      run: dotnet msbuild RemoteDriveClient.sln -t:Restore -p:Platform=x86
 
-    - name: Build and Restore
-      run: dotnet build RemoteDriveClient.sln -p:Platform=x86 # Ми прибрали --no-restore
+    - name: Build
+      run: dotnet build RemoteDriveClient.sln --no-restore -p:Platform=x86
 
     - name: Test
       run: dotnet test RemoteDriveClient.sln --no-build --verbosity normal -p:Platform=x86
