@@ -28,7 +28,7 @@ jobs:
 
     
     - name: Restore dependencies
-      run: dotnet restore RemoteDriveClient.sln -p:Platform=x86
+      run: dotnet restore RemoteDriveClient.sln
 
     - name: Build
       run: dotnet build RemoteDriveClient.sln --no-restore -p:Platform=x86
