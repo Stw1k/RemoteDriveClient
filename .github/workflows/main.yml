@@ -27,8 +27,8 @@ jobs:
         dotnet-version: '8.0.x' 
 
     
-    - name: Restore packages (MSBuild)
-      run: dotnet msbuild RemoteDriveClient.sln -t:Restore -p:Platform=x86
+    - name: Build (MSBuild)
+      run: dotnet msbuild RemoteDriveClient.sln -p:Platform=x86
 
     - name: Build (MSBuild)
       run: dotnet msbuild RemoteDriveClient.sln --no-restore -p:Platform=x86 
