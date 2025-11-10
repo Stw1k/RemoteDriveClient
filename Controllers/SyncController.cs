@@ -73,7 +73,6 @@ namespace RemoteDriveClient.Controllers
 
             int uploaded = 0, downloaded = 0;
 
-            // Sync local → remote
             foreach (var lf in localFiles)
             {
                 OnProgress("Checking " + lf.Name);
@@ -101,7 +100,6 @@ namespace RemoteDriveClient.Controllers
                 }
             }
 
-            // Sync remote → local (new files)
             foreach (var rf in remoteFiles)
             {
                 if (!localByName.ContainsKey(rf.Name))
@@ -127,7 +125,6 @@ namespace RemoteDriveClient.Controllers
             }
             s.Dispose();
 
-            // Update local file timestamp to match remote
             var localPath = Path.Combine(localFolder, remoteFile.Name);
             if (File.Exists(localPath))
             {

@@ -93,7 +93,6 @@ namespace RemoteDriveClient.Services
             return Task.FromResult(true);
         }
 
-        // Реалізація нових методів
         public Task<FileMetadata> GetFileMetadataAsync(string token, string remotePath)
         {
             EnsureToken(token);

@@ -260,6 +260,24 @@ namespace RemoteDriveClient.Forms
             LoadFilesAsync();
         }
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // MainForm
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
+            this.ResumeLayout(false);
+
+        }
+
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void SyncController_ProgressChanged(object sender, string e)
         {
             this.BeginInvoke(new Action(delegate
@@ -317,8 +335,7 @@ namespace RemoteDriveClient.Forms
             {
                 string content = sr.ReadToEnd();
 
-                // Обмеження довжини тексту для великих Kotlin файлів
-                if (content.Length > 50000) // 50KB обмеження для Kotlin файлів
+                if (content.Length > 50000) 
                 {
                     content = content.Substring(0, 50000) + "\n\n...[ФАЙЛ ЗНАЧНО ВЕЛИКИЙ, ВІДОБРАЖЕНО ЛИШЕ ПЕРШІ 50KB]...";
                 }

@@ -1,20 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.36105.23 d17.13
+VisualStudioVersion = 17.13.36105.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteDriveClient", "RemoteDriveClient.csproj", "{03358E48-A1BE-400D-A9FD-D7717CEBE51C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteDriveClient.Tests", "..\RemoteDriveClient.Tests\RemoteDriveClient.Tests.csproj", "{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Debug|x86.ActiveCfg = Debug|x86
+		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Debug|x86.Build.0 = Debug|x86
 		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Release|x86.ActiveCfg = Release|x86
+		{03358E48-A1BE-400D-A9FD-D7717CEBE51C}.Release|x86.Build.0 = Release|x86
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA7DFC12-1048-40FF-B57F-E740A8DE5E7D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

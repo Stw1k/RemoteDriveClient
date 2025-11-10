@@ -13,7 +13,6 @@ namespace RemoteDriveClient.Services
         Task<FileMetadata> UploadFileAsync(string token, string localFilePath, string uploadedBy);
         Task<bool> DeleteFileAsync(string token, string remotePath);
 
-        // Додано відповідно до діаграми класів
         Task<FileMetadata> GetFileMetadataAsync(string token, string remotePath);
         Task<bool> FileExistsAsync(string token, string remotePath);
     }
